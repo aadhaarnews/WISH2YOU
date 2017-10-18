@@ -18,7 +18,7 @@ self.mx = self.cw/2;
 self.my = self.ch/2;
 self.currentHue = 30;
 self.partSpeed = 5;
-self.partSpeedVariance = 10;
+self.partSpeedVariance = 50;
 self.partWind = 50;
 self.partFriction = 5;
 self.partGravity = 1;
@@ -36,7 +36,7 @@ $(document.body).append(self.canvas);
 self.ctx = self.canvas.getContext('2d');
 self.ctx.lineCap = 'round';
 self.ctx.lineJoin = 'round';
-self.lineWidth = 1;
+self.lineWidth = 5;
 self.bindEvents();			
 self.canvasLoop();
 
